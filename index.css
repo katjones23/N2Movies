@@ -59,6 +59,7 @@ body{
 }
 .trending-container{
     text-align: center;
+    display: inline-block;
 }
 .page-footer{
     background-color: black;  
@@ -67,4 +68,8 @@ body{
     height: 100px;
     position: relative; 
     height: 175px;
+}
+.trending-section{
+    text-align: center;
+    align-content: center;
 }
