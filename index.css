@@ -77,3 +77,24 @@ body{
     margin-top: 50px;
     margin-left: 25px;
 }
+
+body {
+  background-image: url('TELEMMGLPICT000133804850_trans++gRl8BouVbC6HZnydG5Kn5pdzd29AV1S6GkBHLgjhxoY.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.movie-is-rated{
+    width: 100px;
+}
+
+.trending-header{
+    color: whitesmoke;
+   
+}
+
+h1{
+font-size: 100px;
+text-shadow: 3px 3px black;
+}
