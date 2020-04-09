@@ -32,3 +32,30 @@ body {
   text-shadow: 1px 1px gray;
 }
 
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.2);
+  max-width: 550px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .z-input{
+  width: 85%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  }
+
+  .searchBtn{
+    background: #9b9a93e5;
+    width: 10%;
+}
+
