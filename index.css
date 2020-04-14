@@ -13,11 +13,16 @@
 
 body {
   background-image: url('TELEMMGLPICT000133804850_trans++gRl8BouVbC6HZnydG5Kn5pdzd29AV1S6GkBHLgjhxoY.jpeg');
+  
   background-repeat: no-repeat center;
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
   height: 100vh;
+ 
+}
+.background-image{
+  opacity: 0.2;
 }
 
 .switch-mode{
