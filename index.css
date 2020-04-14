@@ -71,7 +71,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.trending-section{
+.trending-section, .popular-section, .topRated-section{
   text-align: center;
   align-content: center;
   
@@ -110,5 +110,14 @@ main {
 
 h2{
   color: red;
+}
+
+.popular-header{
+  color: whitesmoke;
+ 
+}
+.topRated-header{
+  color: whitesmoke;
+ 
 }
 
