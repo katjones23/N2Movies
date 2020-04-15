@@ -1,18 +1,12 @@
-
-$(document).ready(function () {
-  $('.sidenav').sidenav();
-});
-
-
-//  Recent search storage; put save inside event listener for search button
-var searchHistoryBlock = $("<div>").addClass("searchHistoryBlock")
-var prevSearches = [];
+//  Recent search storage
+var searchHistoryBlock = $(".searchHistoryBlock");
+var prevMovieSearches = [];
 
 function init() {
-  var storedSearches = JSON.parse(localStorage.getItem("prevSearchesStore"));
+  var storedSearches = JSON.parse(localStorage.getItem("prevMovieSearchesStore"));
 
   if (storedSearches !== null) {
-    prevSearches = storedSearches;
+    prevMovieSearches = storedSearches;
     renderPrevSearches();
   } else {
     return;
@@ -24,12 +18,12 @@ init();
 function renderPrevSearches() {
   $(searchHistoryBlock).empty();
 
-  if (prevSearches.length > 5) {
-    prevSearches.splice(0, 1);
+  if (prevMovieSearches.length > 5) {
+    prevMovieSearches.splice(0, 1);
   }
 
-  for (var i = 0; i < prevSearches.length; i++) {
-    var prevSearch = prevSearches[i];
+  for (var i = 0; i < prevMovieSearches.length; i++) {
+    var prevSearch = prevMovieSearches[i];
     var div = $("<div>")
 
     $(searchHistoryBlock).css("display", "block")
@@ -41,16 +35,15 @@ function renderPrevSearches() {
 
 function localSaveSearch() {
   var div = $("<div>")
-  var inputText = ("#zInput").val();
+  var inputText = $("#zInput").val();
 
-  $(searchHistoryBlock).css("display", "block")
-  $(div).text(inputText);
-  $(div).addClass("searchHistoryItem");
-  $(searchHistoryBlock).prepend(div);
+  prevMovieSearches.push(inputText);
+  localStorage.setItem("prevMovieSearchesStore", JSON.stringify(prevMovieSearches));
 
-  prevSearches.push(inputText);
-  localStorage.setItem("prevSearchesStore", JSON.stringify(prevSearches));
+  renderPrevSearches();
 
 };
 
-localSaveSearch();
+$('.searchBtn').click(function(){
+   localSaveSearch();
+      })
