@@ -58,6 +58,7 @@ body {
   border: none;
   border-radius: 5px;
   font-weight: bold;
+  color: white;
   }
 
   .searchBtn{
@@ -93,7 +94,7 @@ h1{
 }
 
 .card{
-  height: 550px;
+  height: 480px;
 }
 
 .picBox{
