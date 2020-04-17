@@ -20,7 +20,7 @@
 }
 
 body {
-  background-image: url('TELEMMGLPICT000133804850_trans++gRl8BouVbC6HZnydG5Kn5pdzd29AV1S6GkBHLgjhxoY.jpeg');
+  background-image: url('TELEMMGLPICT000133804850_trans++gRl8BouVbC6HZnydG5Kn5pdzd29AV1S6GkBHLgjhxoY.jpeg') ;
   
   background-repeat: no-repeat center;
   background-attachment: fixed;
@@ -29,9 +29,8 @@ body {
   height: 100vh;
  
 }
-.background-image{
-  opacity: 0.2;
-}
+
+
 
 
 .switch-mode{
@@ -85,7 +84,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.trending-section, .popular-section, .topRated-section{
+.trending-section, .popular-section, .topRated-section, .recommended-section, .similar-section, .searchResults{
   text-align: center;
   align-content: center;
 }
@@ -130,19 +129,17 @@ h2{
   color: whitesmoke;
 }
 
-.topRated-header{
+.topRated-header, .searchResults-header{
   color: whitesmoke;
+}
+
+.recommended-header, .similar-header{
+  color: whitesmoke;
+  display: none;
 }
 
 .checked {
   color: orange;
 }
 
-.genreChoice{
-  background-color: black;
-  color: white;
-}
 
-.brand-logo{
-  height: 100px;
-}
