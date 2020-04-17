@@ -7,6 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./index.css">
 </head>
 
@@ -53,12 +54,13 @@
   </section>
   <section>
     <div class="wrapper">
-      <input type="text" class="z-input" id="zInput" placeholder="Find a movie/TV Show">
+      <input type="search" class="z-input" id="zInput" placeholder="Find a movie/TV Show" onclick="myFunction123()">
       <div class="searchBtn">
         <i class="fas fa-search"></i>
       </div>
     </div>
   </section>
+  
   <br>
   <br>
   <br>
@@ -73,7 +75,7 @@
   <br>
   <br>
   <br>
- 
+
 
   <section class="trending-section">
     <div class="trending-header">
@@ -92,7 +94,13 @@
             <div class="card-content">
               <div class="cardTitle">Movie Title</div>
               <div class="movieIsRated">Rated R</div>
-              <div class="movieRating">5 star</div>
+
+              <div class="movieRating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></div>
             </div>
             <div class="card-action">
               <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
@@ -104,20 +112,45 @@
 
                     <div class="col s3">
                       <!-- Grey navigation panel -->
-                      <img src="MV5BMDNkODA5ZGQtODczOS00OTQxLThhMTItMjk0ZmNhMDM0YjNmXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg" class="picBox">
+                      <img
+                        src="MV5BMDNkODA5ZGQtODczOS00OTQxLThhMTItMjk0ZmNhMDM0YjNmXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg"
+                        class="picBox">
                       <div class="movieActors">Actors names</div>
+                      <div class="movieGenres">Movie Genre</div>
+                      <div class="movieReleaseDate">2010</div>
                     </div>
-              
+
                     <div class="col s9">
                       <!-- Teal page content  -->
-                      <div class="cardTitle"><h3>Movie Title</h3></div>
+                      <div class="cardTitle">
+                        <h3>Movie Title</h3>
+                      </div>
+                      <h5>Overview</h5>
                       <section>
-                      <div class="movieOverview"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique maxime ad animi, vel eum vero voluptatibus quis nisi placeat magni dignissimos corporis officia eligendi error rem iure temporibus. Sed, distinctio.</p></div>
+                        <div class="movieOverview">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime perferendis deleniti
+                            nostrum totam voluptatem voluptas iste laudantium accusantium ratione consequatur corporis
+                            at molestias quas quisquam voluptatum, consectetur eligendi quis id!Laboriosam rerum
+                            voluptatem aperiam minima odio temporibus eaque quaerat ex magnam delectus suscipit, sed
+                            fugiat sunt in dicta ducimus quia. Culpa ipsam, vitae cupiditate nobis reiciendis natus
+                            distinctio enim delectus.</p>
+                        </div>
                       </section>
+                      <section>
+                        <h6>Did you know?</h6>
+                        <div class="movieDoesDogDie">Actors names</div>
+                        <div class="movieActors">Actors names</div>
+                        <div class="movieActors">Actors names</div>
+                        <div class="movieActors">Actors names</div>
+                        <div class="movieActors">Actors names</div>
+                      </section>
+
+
+
                     </div>
-              
+
                   </div>
-                 
+
                   <p>A bunch of text</p>
                 </div>
                 <div class="modal-footer">
@@ -136,7 +169,11 @@
             <div class="card-content">
               <div class="cardTitle">Movie Title</div>
               <div class="movieIsRated">Rated R</div>
-              <div class="movieRating">5 star</div>
+              <div class="movieRating"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></div>
 
             </div>
             <div class="card-action">
@@ -162,7 +199,11 @@
             <div class="card-content">
               <div class="cardTitle">Movie Title</div>
               <div class="movieIsRated">Rated R</div>
-              <div class="movieRating">5 star</div>
+              <div class="movieRating"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></div>
 
             </div>
             <div class="card-action">
@@ -188,7 +229,11 @@
             <div class="card-content">
               <div class="cardTitle">Movie Title</div>
               <div class="movieIsRated">Rated R</div>
-              <div class="movieRating">5 star</div>
+              <div class="movieRating"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></div>
 
             </div>
             <div class="card-action">
@@ -214,7 +259,11 @@
             <div class="card-content">
               <div class="cardTitle">Movie Title</div>
               <div class="movieIsRated">Rated R</div>
-              <div class="movieRating">5 star</div>
+              <div class="movieRating"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></div>
 
             </div>
             <div class="card-action">
@@ -240,7 +289,11 @@
             <div class="card-content">
               <div class="cardTitle">Movie Title</div>
               <div class="movieIsRated">Rated R</div>
-              <div class="movieRating">5 star</div>
+              <div class="movieRating"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></div>
 
             </div>
             <div class="card-action">
@@ -279,10 +332,14 @@
             <div class="card-content">
               <div class="cardTitle">Movie Title</div>
               <div class="movieIsRated">Rated R</div>
-              <div class="movieRating">5 star</div>
+              <div class="movieRating"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></div>
             </div>
             <div class="card-action">
-              
+
               <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
               <div id="modal1" class="modal">
                 <div class="modal-content">
@@ -305,10 +362,14 @@
             <div class="card-content">
               <div class="cardTitle">Movie Title</div>
               <div class="movieIsRated">Rated R</div>
-              <div class="movieRating">5 star</div>
+              <div class="movieRating"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></div>
             </div>
             <div class="card-action">
-              
+
               <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
               <div id="modal1" class="modal">
                 <div class="modal-content">
@@ -331,10 +392,14 @@
             <div class="card-content">
               <div class="cardTitle">Movie Title</div>
               <div class="movieIsRated">Rated R</div>
-              <div class="movieRating">5 star</div>
+              <div class="movieRating"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></div>
             </div>
             <div class="card-action">
-              
+
               <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
               <div id="modal1" class="modal">
                 <div class="modal-content">
@@ -357,10 +422,14 @@
             <div class="card-content">
               <div class="cardTitle">Movie Title</div>
               <div class="movieIsRated">Rated R</div>
-              <div class="movieRating">5 star</div>
+              <div class="movieRating"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></div>
             </div>
             <div class="card-action">
-              
+
               <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
               <div id="modal1" class="modal">
                 <div class="modal-content">
@@ -383,10 +452,14 @@
             <div class="card-content">
               <div class="cardTitle">Movie Title</div>
               <div class="movieIsRated">Rated R</div>
-              <div class="movieRating">5 star</div>
+              <div class="movieRating"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></div>
             </div>
             <div class="card-action">
-              
+
               <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
               <div id="modal1" class="modal">
                 <div class="modal-content">
@@ -409,10 +482,14 @@
             <div class="card-content">
               <div class="cardTitle">Movie Title</div>
               <div class="movieIsRated">Rated R</div>
-              <div class="movieRating">5 star</div>
+              <div class="movieRating"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></div>
             </div>
             <div class="card-action">
-              
+
               <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
               <div id="modal1" class="modal">
                 <div class="modal-content">
@@ -448,10 +525,14 @@
             <div class="card-content">
               <div class="cardTitle">Movie Title</div>
               <div class="movieIsRated">Rated R</div>
-              <div class="movieRating">5 star</div>
+              <div class="movieRating"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></div>
             </div>
             <div class="card-action">
-              
+
               <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
               <div id="modal1" class="modal">
                 <div class="modal-content">
@@ -474,10 +555,14 @@
             <div class="card-content">
               <div class="cardTitle">Movie Title</div>
               <div class="movieIsRated">Rated R</div>
-              <div class="movieRating">5 star</div>
+              <div class="movieRating"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></div>
             </div>
             <div class="card-action">
-              
+
               <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
               <div id="modal1" class="modal">
                 <div class="modal-content">
@@ -500,10 +585,14 @@
             <div class="card-content">
               <div class="cardTitle">Movie Title</div>
               <div class="movieIsRated">Rated R</div>
-              <div class="movieRating">5 star</div>
+              <div class="movieRating"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></div>
             </div>
             <div class="card-action">
-              
+
               <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
               <div id="modal1" class="modal">
                 <div class="modal-content">
@@ -526,10 +615,14 @@
             <div class="card-content">
               <div class="cardTitle">Movie Title</div>
               <div class="movieIsRated">Rated R</div>
-              <div class="movieRating">5 star</div>
+              <div class="movieRating"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></div>
             </div>
             <div class="card-action">
-              
+
               <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
               <div id="modal1" class="modal">
                 <div class="modal-content">
@@ -552,10 +645,14 @@
             <div class="card-content">
               <div class="cardTitle">Movie Title</div>
               <div class="movieIsRated">Rated R</div>
-              <div class="movieRating">5 star</div>
+              <div class="movieRating"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></div>
             </div>
             <div class="card-action">
-              
+
               <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
               <div id="modal1" class="modal">
                 <div class="modal-content">
@@ -578,10 +675,14 @@
             <div class="card-content">
               <div class="cardTitle">Movie Title</div>
               <div class="movieIsRated">Rated R</div>
-              <div class="movieRating">5 star</div>
+              <div class="movieRating"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></div>
             </div>
             <div class="card-action">
-              
+
               <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
               <div id="modal1" class="modal">
                 <div class="modal-content">
@@ -600,7 +701,7 @@
     </div>
   </section>
   <hr class="solid">
-  
+
   <footer class="page-footer">
     <div class="container-footer">
       <div class="row">
