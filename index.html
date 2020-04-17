@@ -4,13 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>N2Movies</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./index.css">
 </head>
-
 
 
 
@@ -24,12 +23,12 @@
           height="64"></i></a>
       <a href="./index.html" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Genre</i></a>
       <ul class="right hide-on-med-and-down" id="menu-btn">
-        <li><a href="./comedy.html" class="comedyBtn">Comedy</a></li>
-        <li><a href="./drama.html" class="dramaBtn">Drama</a></li>
-        <li><a href="./action.html" class="actionBtn">Action</a></li>
-        <li><a href="./fantasy.html" class="fantasyBtn">Fantasy</a></li>
-        <li><a href="./animation.html" class="animationBtn">Animation</a></li>
-        <li><a href="./romance.html" class="romanceBtn">Romance</a></li>
+        <li><button class="genreChoice">Comedy</button></li>
+        <li><button class="genreChoice">Drama</button></li>
+        <li><button class="genreChoice">Action</button></li>
+        <li><button class="genreChoice">Fantasy</button></li>
+        <li><button class="genreChoice">Animation</button></li>
+        <li><button class="genreChoice">Romance</button></li>
       </ul>
       <ul class="sidenav" id="mobile-demo">
         <li><a href="./comedy.html" class="comedyBtn">Comedy</a></li>
@@ -52,15 +51,16 @@
       </label>
     </div>
   </section>
+  
   <section>
     <div class="wrapper">
       <input type="search" class="z-input" id="zInput" placeholder="Find a movie/TV Show">
-      <div class="searchBtn">
+      <button class="searchBtn" id="searchButton">
         <i class="fas fa-search"></i>
-      </div>
+      </button>
     </div>
   </section>
-  
+
   <br>
   <br>
   <br>
@@ -75,6 +75,7 @@
   <br>
   <br>
   <br>
+
 
 
   <section class="trending-section">
@@ -83,233 +84,7 @@
     </div>
     <div class="trending-container"></div>
     <section class="trending-movies">
-      <div class="row">
-        <div class="col s4 m2">
-          <div class="card">
-            <div class="card-image">
-              <img src="MV5BMDNkODA5ZGQtODczOS00OTQxLThhMTItMjk0ZmNhMDM0YjNmXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg"
-                class="picBox">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <div class="cardTitle">Movie Title</div>
-              <div class="movieIsRated">Rated R</div>
-
-              <div class="movieRating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span></div>
-            </div>
-            <div class="card-action">
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
-
-
-              <div id="modal1" class="modal">
-                <div class="modal-content">
-                  <div class="row">
-
-                    <div class="col s3">
-                      <!-- Grey navigation panel -->
-                      <img
-                        src="MV5BMDNkODA5ZGQtODczOS00OTQxLThhMTItMjk0ZmNhMDM0YjNmXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg"
-                        class="picBox">
-                      <div class="movieActors">Actors names</div>
-                      <div class="movieGenres">Movie Genre</div>
-                      <div class="movieReleaseDate">2010</div>
-                    </div>
-
-                    <div class="col s9">
-                      <!-- Teal page content  -->
-                      <div class="cardTitle">
-                        <h3>Movie Title</h3>
-                      </div>
-                      <h5>Overview</h5>
-                      <section>
-                        <div class="movieOverview">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime perferendis deleniti
-                            nostrum totam voluptatem voluptas iste laudantium accusantium ratione consequatur corporis
-                            at molestias quas quisquam voluptatum, consectetur eligendi quis id!Laboriosam rerum
-                            voluptatem aperiam minima odio temporibus eaque quaerat ex magnam delectus suscipit, sed
-                            fugiat sunt in dicta ducimus quia. Culpa ipsam, vitae cupiditate nobis reiciendis natus
-                            distinctio enim delectus.</p>
-                        </div>
-                      </section>
-                      <section>
-                        <h6>Did you know?</h6>
-                        <div class="movieDoesDogDie">Actors names</div>
-                        <div class="movieActors">Actors names</div>
-                        <div class="movieActors">Actors names</div>
-                        <div class="movieActors">Actors names</div>
-                        <div class="movieActors">Actors names</div>
-                      </section>
-
-
-
-                    </div>
-
-                  </div>
-
-                  <p>A bunch of text</p>
-                </div>
-                <div class="modal-footer">
-                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col s4 m2">
-          <div class="card">
-            <div class="card-image">
-              <img src="The_Grudge_2020_Poster.jpeg" class="picBox">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <div class="cardTitle">Movie Title</div>
-              <div class="movieIsRated">Rated R</div>
-              <div class="movieRating"><span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span></div>
-
-            </div>
-            <div class="card-action">
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
-              <div id="modal1" class="modal">
-                <div class="modal-content">
-                  <h4>Modal Header</h4>
-                  <p>A bunch of text</p>
-                </div>
-                <div class="modal-footer">
-                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col s4 m2">
-          <div class="card">
-            <div class="card-image">
-              <img src="Birds_of_Prey_(and_the_Fantabulous_Emancipation_of_one_Harley_Quinn).jpg" class="picBox">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <div class="cardTitle">Movie Title</div>
-              <div class="movieIsRated">Rated R</div>
-              <div class="movieRating"><span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span></div>
-
-            </div>
-            <div class="card-action">
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
-              <div id="modal1" class="modal">
-                <div class="modal-content">
-                  <h4>Modal Header</h4>
-                  <p>A bunch of text</p>
-                </div>
-                <div class="modal-footer">
-                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col s4 m2">
-          <div class="card">
-            <div class="card-image">
-              <img src="hanzelngretel.jpg" class="picBox">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <div class="cardTitle">Movie Title</div>
-              <div class="movieIsRated">Rated R</div>
-              <div class="movieRating"><span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span></div>
-
-            </div>
-            <div class="card-action">
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
-              <div id="modal1" class="modal">
-                <div class="modal-content">
-                  <h4>Modal Header</h4>
-                  <p>A bunch of text</p>
-                </div>
-                <div class="modal-footer">
-                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col s4 m2">
-          <div class="card">
-            <div class="card-image">
-              <img src="badboys4life.jpg" class="picBox">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <div class="cardTitle">Movie Title</div>
-              <div class="movieIsRated">Rated R</div>
-              <div class="movieRating"><span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span></div>
-
-            </div>
-            <div class="card-action">
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
-              <div id="modal1" class="modal">
-                <div class="modal-content">
-                  <h4>Modal Header</h4>
-                  <p>A bunch of text</p>
-                </div>
-                <div class="modal-footer">
-                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col s4 m2">
-          <div class="card">
-            <div class="card-image">
-              <img src="thecallofthewild.jpg" class="picBox">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <div class="cardTitle">Movie Title</div>
-              <div class="movieIsRated">Rated R</div>
-              <div class="movieRating"><span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span></div>
-
-            </div>
-            <div class="card-action">
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
-              <div id="modal1" class="modal">
-                <div class="modal-content">
-                  <h4>Modal Header</h4>
-                  <p>A bunch of text</p>
-                </div>
-                <div class="modal-footer">
-                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="row trending-moviesRow">
       </div>
     </section>
     </div>
@@ -321,188 +96,7 @@
     </div>
     <div class="popular-container"></div>
     <section class="popular-movies">
-      <div class="row">
-        <div class="col s4 m2">
-          <div class="card">
-            <div class="card-image">
-              <img src="MV5BMDNkODA5ZGQtODczOS00OTQxLThhMTItMjk0ZmNhMDM0YjNmXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg"
-                class="picBox">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <div class="cardTitle">Movie Title</div>
-              <div class="movieIsRated">Rated R</div>
-              <div class="movieRating"><span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span></div>
-            </div>
-            <div class="card-action">
-
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
-              <div id="modal1" class="modal">
-                <div class="modal-content">
-                  <h4>Modal Header</h4>
-                  <p>A bunch of text</p>
-                </div>
-                <div class="modal-footer">
-                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col s4 m2">
-          <div class="card">
-            <div class="card-image">
-              <img src="The_Grudge_2020_Poster.jpeg" class="picBox">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <div class="cardTitle">Movie Title</div>
-              <div class="movieIsRated">Rated R</div>
-              <div class="movieRating"><span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span></div>
-            </div>
-            <div class="card-action">
-
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
-              <div id="modal1" class="modal">
-                <div class="modal-content">
-                  <h4>Modal Header</h4>
-                  <p>A bunch of text</p>
-                </div>
-                <div class="modal-footer">
-                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col s4 m2">
-          <div class="card">
-            <div class="card-image">
-              <img src="Birds_of_Prey_(and_the_Fantabulous_Emancipation_of_one_Harley_Quinn).jpg" class="picBox">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <div class="cardTitle">Movie Title</div>
-              <div class="movieIsRated">Rated R</div>
-              <div class="movieRating"><span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span></div>
-            </div>
-            <div class="card-action">
-
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
-              <div id="modal1" class="modal">
-                <div class="modal-content">
-                  <h4>Modal Header</h4>
-                  <p>A bunch of text</p>
-                </div>
-                <div class="modal-footer">
-                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col s4 m2">
-          <div class="card">
-            <div class="card-image">
-              <img src="hanzelngretel.jpg" class="picBox">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <div class="cardTitle">Movie Title</div>
-              <div class="movieIsRated">Rated R</div>
-              <div class="movieRating"><span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span></div>
-            </div>
-            <div class="card-action">
-
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
-              <div id="modal1" class="modal">
-                <div class="modal-content">
-                  <h4>Modal Header</h4>
-                  <p>A bunch of text</p>
-                </div>
-                <div class="modal-footer">
-                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col s4 m2">
-          <div class="card">
-            <div class="card-image">
-              <img src="badboys4life.jpg" class="picBox">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <div class="cardTitle">Movie Title</div>
-              <div class="movieIsRated">Rated R</div>
-              <div class="movieRating"><span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span></div>
-            </div>
-            <div class="card-action">
-
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
-              <div id="modal1" class="modal">
-                <div class="modal-content">
-                  <h4>Modal Header</h4>
-                  <p>A bunch of text</p>
-                </div>
-                <div class="modal-footer">
-                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col s4 m2">
-          <div class="card">
-            <div class="card-image">
-              <img src="thecallofthewild.jpg" class="picBox">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <div class="cardTitle">Movie Title</div>
-              <div class="movieIsRated">Rated R</div>
-              <div class="movieRating"><span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span></div>
-            </div>
-            <div class="card-action">
-
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
-              <div id="modal1" class="modal">
-                <div class="modal-content">
-                  <h4>Modal Header</h4>
-                  <p>A bunch of text</p>
-                </div>
-                <div class="modal-footer">
-                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="row popular-moviesRow">
       </div>
     </section>
     </div>
@@ -514,188 +108,7 @@
     </div>
     <div class="topRated-container"></div>
     <section class="topRated-movies">
-      <div class="row">
-        <div class="col s4 m2">
-          <div class="card">
-            <div class="card-image">
-              <img src="MV5BMDNkODA5ZGQtODczOS00OTQxLThhMTItMjk0ZmNhMDM0YjNmXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg"
-                class="picBox">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <div class="cardTitle">Movie Title</div>
-              <div class="movieIsRated">Rated R</div>
-              <div class="movieRating"><span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span></div>
-            </div>
-            <div class="card-action">
-
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
-              <div id="modal1" class="modal">
-                <div class="modal-content">
-                  <h4>Modal Header</h4>
-                  <p>A bunch of text</p>
-                </div>
-                <div class="modal-footer">
-                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col s4 m2">
-          <div class="card">
-            <div class="card-image">
-              <img src="The_Grudge_2020_Poster.jpeg" class="picBox">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <div class="cardTitle">Movie Title</div>
-              <div class="movieIsRated">Rated R</div>
-              <div class="movieRating"><span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span></div>
-            </div>
-            <div class="card-action">
-
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
-              <div id="modal1" class="modal">
-                <div class="modal-content">
-                  <h4>Modal Header</h4>
-                  <p>A bunch of text</p>
-                </div>
-                <div class="modal-footer">
-                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col s4 m2">
-          <div class="card">
-            <div class="card-image">
-              <img src="Birds_of_Prey_(and_the_Fantabulous_Emancipation_of_one_Harley_Quinn).jpg" class="picBox">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <div class="cardTitle">Movie Title</div>
-              <div class="movieIsRated">Rated R</div>
-              <div class="movieRating"><span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span></div>
-            </div>
-            <div class="card-action">
-
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
-              <div id="modal1" class="modal">
-                <div class="modal-content">
-                  <h4>Modal Header</h4>
-                  <p>A bunch of text</p>
-                </div>
-                <div class="modal-footer">
-                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col s4 m2">
-          <div class="card">
-            <div class="card-image">
-              <img src="hanzelngretel.jpg" class="picBox">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <div class="cardTitle">Movie Title</div>
-              <div class="movieIsRated">Rated R</div>
-              <div class="movieRating"><span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span></div>
-            </div>
-            <div class="card-action">
-
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
-              <div id="modal1" class="modal">
-                <div class="modal-content">
-                  <h4>Modal Header</h4>
-                  <p>A bunch of text</p>
-                </div>
-                <div class="modal-footer">
-                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col s4 m2">
-          <div class="card">
-            <div class="card-image">
-              <img src="badboys4life.jpg" class="picBox">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <div class="cardTitle">Movie Title</div>
-              <div class="movieIsRated">Rated R</div>
-              <div class="movieRating"><span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span></div>
-            </div>
-            <div class="card-action">
-
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
-              <div id="modal1" class="modal">
-                <div class="modal-content">
-                  <h4>Modal Header</h4>
-                  <p>A bunch of text</p>
-                </div>
-                <div class="modal-footer">
-                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col s4 m2">
-          <div class="card">
-            <div class="card-image">
-              <img src="thecallofthewild.jpg" class="picBox">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <div class="cardTitle">Movie Title</div>
-              <div class="movieIsRated">Rated R</div>
-              <div class="movieRating"><span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span></div>
-            </div>
-            <div class="card-action">
-
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
-              <div id="modal1" class="modal">
-                <div class="modal-content">
-                  <h4>Modal Header</h4>
-                  <p>A bunch of text</p>
-                </div>
-                <div class="modal-footer">
-                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="row topRated-moviesRow">
       </div>
     </section>
     </div>
@@ -710,16 +123,16 @@
               height="150px"></i></a>
         </div>
         <div class="col l4 s12">
-          <h5 class="white-text">Footer Content</h5>
-          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          <!-- <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p> -->
         </div>
         <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
+          <!-- <h5 class="white-text">Links</h5> -->
           <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Trending</a></li>
+            <!-- <li><a class="grey-text text-lighten-3" href="#!">Trending</a></li>
             <li><a class="grey-text text-lighten-3" href="#!">New Releases</a></li>
             <li><a class="grey-text text-lighten-3" href="#!">About Us</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li> -->
           </ul>
         </div>
       </div>
@@ -727,11 +140,11 @@
 
   </footer>
 
-</body>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./index.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="./index.js"></script>
+</body>
 
 </html>

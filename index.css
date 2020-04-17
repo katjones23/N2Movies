@@ -1,14 +1,14 @@
 *{
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
 }
 
 .nav-wrapper{
-    background-color: black;
-    position: relative;
-    height: 125px;
+  background-color: black;
+  position: relative;
+  height: 125px;
 }
 
 body {
@@ -25,10 +25,13 @@ body {
   opacity: 0.2;
 }
 
+.background-image{
+  opacity: 0.2;
+}
+
 .switch-mode{
   margin-top: 50px;
   margin-left: 25px;
-  
 }
 
 .switch-text{
@@ -59,15 +62,14 @@ body {
   border-radius: 5px;
   font-weight: bold;
   color: white;
-  }
+}
 
-  .searchBtn{
-    background: #9b9a93e5;
-    width: 10%;
-    border-radius: 5px;
-    position: relative;
-    cursor: pointer;
-
+.searchBtn{
+  background: #9b9a93e5;
+  width: 10%;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
 }
 
 .searchBtn .fas{
@@ -80,26 +82,26 @@ body {
 .trending-section, .popular-section, .topRated-section{
   text-align: center;
   align-content: center;
-  
 }
 
 h1{
   font-size: 500%;
   text-shadow: 3px 3px black;
-  }
+}
 
-  .trending-header{
-    color: whitesmoke;
-   
+.trending-header{
+  color: whitesmoke;
 }
 
 .card{
   height: 480px;
+  margin-bottom: 100px;
 }
 
 .picBox{
   height: 300px;
 }
+
 .page-footer{
   background-color: rgba(128, 128, 128, 0.342);  
 }
@@ -120,17 +122,12 @@ h2{
 
 .popular-header{
   color: whitesmoke;
- 
 }
+
 .topRated-header{
   color: whitesmoke;
- 
 }
 
 .checked {
   color: orange;
 }
-
-
-
-
