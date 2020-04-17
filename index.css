@@ -6,9 +6,17 @@
 }
 
 .nav-wrapper{
-  background-color: black;
+  
   position: relative;
-  height: 125px;
+  padding: 10px;
+  
+  
+  
+}
+.nav-bar{
+  height: 100%;
+  position: relative;
+  padding-bottom: 20px;
 }
 
 body {
@@ -25,9 +33,6 @@ body {
   opacity: 0.2;
 }
 
-.background-image{
-  opacity: 0.2;
-}
 
 .switch-mode{
   margin-top: 50px;
@@ -36,7 +41,7 @@ body {
 
 .switch-text{
   color: black;
-  font-size: 25px;
+  font-size: 150%;
   text-shadow: 1px 1px gray;
 }
 
@@ -45,9 +50,9 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(0,0,0,0.2);
-  max-width: 550px;
-  width: 100%;
+  background: rgba(83, 83, 83, 0.2);
+  
+  width: 50%;
   padding: 15px;
   border-radius: 5px;
   display: flex;
@@ -58,7 +63,7 @@ body {
 .wrapper .z-input{
   width: 85%;
   padding: 15px 20px;
-  border: none;
+  border-bottom: none;
   border-radius: 5px;
   font-weight: bold;
   color: white;
@@ -66,7 +71,8 @@ body {
 
 .searchBtn{
   background: #9b9a93e5;
-  width: 10%;
+  font-size: 150%;
+  width: 15%;
   border-radius: 5px;
   position: relative;
   cursor: pointer;
@@ -130,4 +136,13 @@ h2{
 
 .checked {
   color: orange;
+}
+
+.genreChoice{
+  background-color: black;
+  color: white;
+}
+
+.brand-logo{
+  height: 100px;
 }
