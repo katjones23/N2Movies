@@ -73,7 +73,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.trending-section, .popular-section, .topRated-section{
+.trending-section, .popular-section, .topRated-section, .recommended-section, .similar-section, .searchResults{
   text-align: center;
   align-content: center;
 }
@@ -118,8 +118,13 @@ h2{
   color: whitesmoke;
 }
 
-.topRated-header{
+.topRated-header, .searchResults-header{
   color: whitesmoke;
+}
+
+.recommended-header, .similar-header{
+  color: whitesmoke;
+  display: none;
 }
 
 .checked {
