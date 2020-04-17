@@ -14,10 +14,15 @@ $(document).ready(function () {
 
 $('.searchBtn').click(function () {
   localSaveSearch();
-})
+});
+
+$(document).ready(function(){
+  $('.modal').modal();
+});
 
 
 //  Recent search storage
+// ******div with class searchHistoryBlock needs to be added to HTML as well as styling for div and the search items
 var searchHistoryBlock = $(".searchHistoryBlock");
 var prevMovieSearches = [];
 
@@ -61,7 +66,6 @@ function localSaveSearch() {
   renderPrevSearches();
 
 };
-
 
 function dtddAPI(resultName) {
   //DtDD API
@@ -109,7 +113,7 @@ function dtddAPI(resultName) {
 
           if (topics.includes("a dog dies") || topics.includes("animals are abused") || topics.includes("an animal dies")
             || topics.includes("a cat dies") || topics.includes("a horse dies")) {
-            animalDisclaimer = "*depictions of animals hurt or dying"
+            animalDisclaimer = " *depictions of animals hurt or dying* "
           };
 
           if (topics.includes("heads get squashed") || topics.includes("someone is burned alive") || topics.includes("teeth are damaged")
@@ -123,14 +127,14 @@ function dtddAPI(resultName) {
             || topics.includes("there are hangings") || topics.includes("someone is buried alive") || topics.includes("a plane crashes")
             || topics.includes("someone drowns") || topics.includes("there's blood/gore") || topics.includes("a car crashes") || topics.includes("someone struggles to breathe")
             || topics.includes("a person is hit by a car")) {
-            violenceDisclaimer = "*disturbing images of/references to violence, injury, or death"
+            violenceDisclaimer = " *disturbing images of/references to violence, injury, or death* "
           };
 
           if (topics.includes("somone has a seizure") || topics.includes("needles/syringes are used") || topics.includes("there's a hospital scene")
             || topics.includes("someone has cancer") || topics.includes("there's a mental institution scene") || topics.includes("there's body dysmorphia")
             || topics.includes("someone has an anxiety attack") || topics.includes("someone has an eating disorder") || topics.includes("someone miscarries")
             || topics.includes("someone has an abortion") || topics.includes("there's childbirth")) {
-            medicalDisclaimer = "*certain medical situations or settings"
+            medicalDisclaimer = " *certain medical situations or settings* "
           }
 
           if (topics.includes("there are spiders") || topics.includes("there are snakes") || topics.includes("there are bugs") || topics.includes("someone cheats")
@@ -141,27 +145,26 @@ function dtddAPI(resultName) {
             || topics.includes("someone speaks hate speech") || topics.includes("someone is misgendered") || topics.includes("there's fat jokes")
             || topics.includes("there's antisemitism") || topics.includes("there's ableist language or behavior") || topics.includes("Santa (et al) is spoiled")
             || topics.includes("the ending is sad") || topics.includes("alcohol abuse") || topics.includes("there's addiction") || topics.includes("someone uses drugs")) {
-            everythingElseDisclaimer = "*other imagery some viewers may not want"
+            everythingElseDisclaimer = " *other imagery some viewers may not want* "
           }
 
-          // in the page, add with br tags to break up groups
           if (animalDisclaimer === "" && violenceDisclaimer === "" && medicalDisclaimer === "" && everythingElseDisclaimer === "") {
-            // hide section
             return;
           }
 
-          console.log("This may contain: " + animalDisclaimer + violenceDisclaimer + medicalDisclaimer + everythingElseDisclaimer)
-          // br
-          console.log("Please see " + dddMovieURL + " for more information.")
+          totalDisclaimer = "This may contain: " + animalDisclaimer + violenceDisclaimer + medicalDisclaimer + everythingElseDisclaimer + ".  Please see " + dddMovieURL + " for more information.";
+          
+          return totalDisclaimer;
         })
         .catch(function (error) {
-          // hide section
+          return;
         })
     })
     .catch(function (error) {
-      // hide section
+      return;
     })
 };
+
 
 const MOVIE_DB_API = 'd1ed99d95a5d38c111b41d8edc21c062';
 const MOVIE_DB_ENDPOINT = 'https://api.themoviedb.org';
@@ -174,18 +177,108 @@ function getTopRatedMovies() {
     .done(function (result) {
       console.log(result.results)
       var topRated = []
-      for (let index = 0; index < 5; index++) {
+      for (let index = 0; index < 6; index++) {
         var topRatedMovies = {}
-        topRatedMovies.poster_path = result.results[index].poster_path;
+        // Modified by Kat
+        topRatedMovies.poster_path = "http://image.tmdb.org/t/p/w185/" + result.results[index].poster_path;
         topRatedMovies.title = result.results[index].title;
         topRatedMovies.vote_average = result.results[index].vote_average;
+        // Added by Kat
+        topRatedMovies.overview = result.results[index].overview;
+        // Added by Kat
+        topRatedMovies.id = result.results[index].id;
         topRated.push(topRatedMovies);
-        dtddAPI(topRatedMovies.title);
+        // Added by Kat
+        var pageText = topRatedMovies.overview;
+        // var dddResults = dtddAPI(topRatedMovies.title); 
+        // console.log(dddResults)
+        // if (dddResults !== "undefined") {
+        //   pageText = topRatedMovies.overview + dddResults;
+        // } else {
+        //   pageText = topRatedMovies.overview;
+        // }
+        addResultstoDOM("topRated-moviesRow", topRatedMovies.poster_path, topRatedMovies.title, "R", topRatedMovies.vote_average, topRatedMovies.id, pageText)
       }
       console.log(topRated);
     })
 }
 
 getTopRatedMovies();
+
+function addResultstoDOM(section, imageSRC, movieTitle, movieRated, movieReview, movieID, paraInfo) {
+  var column = $("<div>").addClass("col");
+  column.addClass("s6")
+  column.addClass("m2")
+  
+  var card = $("<div>").addClass("card");
+  
+  var cardImageDiv = $("<div>").addClass("card-image");
+
+  var cardImage = $("<img>").addClass("picBox");
+  cardImage.attr("src", imageSRC);
+
+  var cardContent = $("<div>").addClass("card-content");
+  
+  var cardTitle = $("<div>").addClass("cardTitle");
+  cardTitle.text(movieTitle);
+  
+  var movieIsRated = $("<div>").addClass("movieIsRated");
+  movieIsRated.text(movieRated);
+  
+  var movieRating = $("<div>").addClass("movieRating");
+  movieRating.text(movieReview)
+  
+  var cardAction = $("<div>").addClass("card-action");
+  
+  var aModalTrigger = $("<a>").addClass("waves-effect");
+  aModalTrigger.addClass("waves-light");
+  aModalTrigger.addClass("btn");
+  aModalTrigger.addClass("modal-trigger");
+  aModalTrigger.attr("href", "#modal" + movieID);
+  aModalTrigger.text("More Info");
+
+  var modalDiv = $("<div>").addClass("modal");
+  modalDiv.attr("id", "modal" + movieID);
+          
+  var modalContent = $("<div>").addClass("modal-content");
+  
+  var h4 = $("<h4>").text(movieTitle)
+  
+  var movieInfo = $("<p>").text(paraInfo)
+  
+  var modalFooter = $("<div>").addClass("modal-footer")
+  
+  var aModalClose = $("<a>").addClass("modal-close");
+  aModalClose.addClass("waves-effect");
+  aModalClose.addClass("waves-green");
+  aModalClose.addClass("btn-flat");
+  aModalClose.attr("href", "#!");
+  aModalClose.text("Close");
+
+  $("." + section).append(column);
+
+  $(column).append(card);
+
+  $(card).append(cardImageDiv);
+  $(card).append(cardContent);
+  $(card).append(cardAction);
+
+  $(cardImageDiv).append(cardImage);
+
+  $(cardContent).append(cardTitle);
+  $(cardContent).append(movieIsRated);
+  $(cardContent).append(movieRating);
+
+  $(cardAction).append(aModalTrigger);
+  $(cardAction).append(modalDiv);
+
+  $(modalDiv).append(modalContent);
+  $(modalDiv).append(modalFooter);
+
+  $(modalContent).append(h4);
+  $(modalContent).append(movieInfo);
+
+  $(modalFooter).append(aModalClose);
+};
 
 

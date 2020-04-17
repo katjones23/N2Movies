@@ -12,6 +12,7 @@
 
 
 
+
 <body>
 
 
@@ -21,21 +22,21 @@
       <a href="./index.html" class="brand-logo"><img src="N2MOVIESlogo2.png" alt="N2MOVIESlogo" width="= " 100
           height="64"></i></a>
       <a href="./index.html" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Genre</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="./comedy.html">Comedy</a></li>
-        <li><a href="./drama.html">Drama</a></li>
-        <li><a href="./action.html">Action</a></li>
-        <li><a href="./fantasy.html">Fantasy</a></li>
-        <li><a href="./animation.html">Animation</a></li>
-        <li><a href="./romance.html">Romance</a></li>
+      <ul class="right hide-on-med-and-down" id="menu-btn">
+        <li><a href="./comedy.html" class="comedyBtn">Comedy</a></li>
+        <li><a href="./drama.html" class="dramaBtn">Drama</a></li>
+        <li><a href="./action.html" class="actionBtn">Action</a></li>
+        <li><a href="./fantasy.html" class="fantasyBtn">Fantasy</a></li>
+        <li><a href="./animation.html" class="animationBtn">Animation</a></li>
+        <li><a href="./romance.html" class="romanceBtn">Romance</a></li>
       </ul>
       <ul class="sidenav" id="mobile-demo">
-        <li><a href="./comedy.html">Comedy</a></li>
-        <li><a href="./drama.html">Drama</a></li>
-        <li><a href="./action.html">Action</a></li>
-        <li><a href="./fantasy.html">Fantasy</a></li>
-        <li><a href="./animation.html">Animation</a></li>
-        <li><a href="./romance.html">Romance</a></li>
+        <li><a href="./comedy.html" class="comedyBtn">Comedy</a></li>
+        <li><a href="./drama.html" class="dramaBtn">Drama</a></li>
+        <li><a href="./action.html" class="actionBtn">Action</a></li>
+        <li><a href="./fantasy.html" class="fantasyBtn">Fantasy</a></li>
+        <li><a href="./animation.html" class="animationBtn">Animation</a></li>
+        <li><a href="./romance.html" class="romanceBtn">Romance</a></li>
 
       </ul>
     </div>
@@ -50,20 +51,569 @@
       </label>
     </div>
   </section>
-
-  <div class="wrapper">
-    <input type="text" class="z-input" id="zInput" placeholder="Find a movie/TV Show">
-    <div class="searchBtn">
-      <i class="fas fa-search"></i>
+  <section>
+    <div class="wrapper">
+      <input type="text" class="z-input" id="zInput" placeholder="Find a movie/TV Show">
+      <div class="searchBtn">
+        <i class="fas fa-search"></i>
+      </div>
     </div>
-  </div>
-  <div class="searchHistoryBlock"></div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 
+
+  <section class="trending-section">
+    <div class="trending-header">
+      <h1>Trending Now</h1>
+    </div>
+    <div class="trending-container"></div>
+    <section class="trending-movies">
+      <div class="row">
+        <!-- <div class="col s4 m2">
+          <div class="card">
+            <div class="card-image">
+              <img src="MV5BMDNkODA5ZGQtODczOS00OTQxLThhMTItMjk0ZmNhMDM0YjNmXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg"
+                class="picBox">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+              <div class="cardTitle">Movie Title</div>
+              <div class="movieIsRated">Rated R</div>
+              <div class="movieRating">5 star</div>
+            </div>
+            <div class="card-action">
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
+
+
+              <div id="modal1" class="modal">
+                <div class="modal-content">
+                  <h4>Modal Header</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s4 m2">
+          <div class="card">
+            <div class="card-image">
+              <img src="The_Grudge_2020_Poster.jpeg" class="picBox">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+              <div class="cardTitle">Movie Title</div>
+              <div class="movieIsRated">Rated R</div>
+              <div class="movieRating">5 star</div>
+
+            </div>
+            <div class="card-action">
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal2">More Info</a>
+              <div id="modal2" class="modal">
+                <div class="modal-content">
+                  <h4>Modal Header</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s4 m2">
+          <div class="card">
+            <div class="card-image">
+              <img src="Birds_of_Prey_(and_the_Fantabulous_Emancipation_of_one_Harley_Quinn).jpg" class="picBox">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+              <div class="cardTitle">Movie Title</div>
+              <div class="movieIsRated">Rated R</div>
+              <div class="movieRating">5 star</div>
+
+            </div>
+            <div class="card-action">
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal3">More Info</a>
+              <div id="modal3" class="modal">
+                <div class="modal-content">
+                  <h4>Modal Header</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s4 m2">
+          <div class="card">
+            <div class="card-image">
+              <img src="hanzelngretel.jpg" class="picBox">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+              <div class="cardTitle">Movie Title</div>
+              <div class="movieIsRated">Rated R</div>
+              <div class="movieRating">5 star</div>
+
+            </div>
+            <div class="card-action">
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal4">More Info</a>
+              <div id="modal4" class="modal">
+                <div class="modal-content">
+                  <h4>Modal Header</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s4 m2">
+          <div class="card">
+            <div class="card-image">
+              <img src="badboys4life.jpg" class="picBox">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+              <div class="cardTitle">Movie Title</div>
+              <div class="movieIsRated">Rated R</div>
+              <div class="movieRating">5 star</div>
+
+            </div>
+            <div class="card-action">
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal5">More Info</a>
+              <div id="modal5" class="modal">
+                <div class="modal-content">
+                  <h4>Modal Header</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s4 m2">
+          <div class="card">
+            <div class="card-image">
+              <img src="thecallofthewild.jpg" class="picBox">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+              <div class="cardTitle">Movie Title</div>
+              <div class="movieIsRated">Rated R</div>
+              <div class="movieRating">5 star</div>
+
+            </div>
+            <div class="card-action">
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal6">More Info</a>
+              <div id="modal6" class="modal">
+                <div class="modal-content">
+                  <h4>Modal Header</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    </div>
+  </section>
+
+  <section class="popular-section">
+    <div class="popular-header">
+      <h1>Popular</h1>
+    </div>
+    <div class="popular-container"></div>
+    <section class="popular-movies">
+      <div class="row">
+        <!-- <div class="col s4 m2">
+          <div class="card">
+            <div class="card-image">
+              <img src="MV5BMDNkODA5ZGQtODczOS00OTQxLThhMTItMjk0ZmNhMDM0YjNmXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg"
+                class="picBox">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+              <div class="cardTitle">Movie Title</div>
+              <div class="movieIsRated">Rated R</div>
+              <div class="movieRating">5 star</div>
+            </div>
+            <div class="card-action">
+
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal7">More Info</a>
+              <div id="modal7" class="modal">
+                <div class="modal-content">
+                  <h4>Modal Header</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s4 m2">
+          <div class="card">
+            <div class="card-image">
+              <img src="The_Grudge_2020_Poster.jpeg" class="picBox">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+              <div class="cardTitle">Movie Title</div>
+              <div class="movieIsRated">Rated R</div>
+              <div class="movieRating">5 star</div>
+            </div>
+            <div class="card-action">
+
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal8">More Info</a>
+              <div id="modal8" class="modal">
+                <div class="modal-content">
+                  <h4>Modal Header</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s4 m2">
+          <div class="card">
+            <div class="card-image">
+              <img src="Birds_of_Prey_(and_the_Fantabulous_Emancipation_of_one_Harley_Quinn).jpg" class="picBox">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+              <div class="cardTitle">Movie Title</div>
+              <div class="movieIsRated">Rated R</div>
+              <div class="movieRating">5 star</div>
+            </div>
+            <div class="card-action">
+
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal9">More Info</a>
+              <div id="modal9" class="modal">
+                <div class="modal-content">
+                  <h4>Modal Header</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s4 m2">
+          <div class="card">
+            <div class="card-image">
+              <img src="hanzelngretel.jpg" class="picBox">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+              <div class="cardTitle">Movie Title</div>
+              <div class="movieIsRated">Rated R</div>
+              <div class="movieRating">5 star</div>
+            </div>
+            <div class="card-action">
+
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal10">More Info</a>
+              <div id="modal10" class="modal">
+                <div class="modal-content">
+                  <h4>Modal Header</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s4 m2">
+          <div class="card">
+            <div class="card-image">
+              <img src="badboys4life.jpg" class="picBox">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+              <div class="cardTitle">Movie Title</div>
+              <div class="movieIsRated">Rated R</div>
+              <div class="movieRating">5 star</div>
+            </div>
+            <div class="card-action">
+
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal11">More Info</a>
+              <div id="modal11" class="modal">
+                <div class="modal-content">
+                  <h4>Modal Header</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s4 m2">
+          <div class="card">
+            <div class="card-image">
+              <img src="thecallofthewild.jpg" class="picBox">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+              <div class="cardTitle">Movie Title</div>
+              <div class="movieIsRated">Rated R</div>
+              <div class="movieRating">5 star</div>
+            </div>
+            <div class="card-action">
+
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal12">More Info</a>
+              <div id="modal12" class="modal">
+                <div class="modal-content">
+                  <h4>Modal Header</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    </div>
+  </section>
+
+  <section class="topRated-section">
+    <div class="topRated-header">
+      <h1>Top Rated</h1>
+    </div>
+    <div class="topRated-container"></div>
+    <section class="topRated-movies">
+      <div class="row topRated-moviesRow">
+        <!-- <div class="col s4 m2">
+          <div class="card">
+            <div class="card-image">
+              <img src="MV5BMDNkODA5ZGQtODczOS00OTQxLThhMTItMjk0ZmNhMDM0YjNmXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg"
+                class="picBox">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+              <div class="cardTitle">Movie Title</div>
+              <div class="movieIsRated">Rated R</div>
+              <div class="movieRating">5 star</div>
+            </div>
+            <div class="card-action">
+
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal13">More Info</a>
+              <div id="modal13" class="modal">
+                <div class="modal-content">
+                  <h4>Modal Header</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s4 m2">
+          <div class="card">
+            <div class="card-image">
+              <img src="The_Grudge_2020_Poster.jpeg" class="picBox">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+              <div class="cardTitle">Movie Title</div>
+              <div class="movieIsRated">Rated R</div>
+              <div class="movieRating">5 star</div>
+            </div>
+            <div class="card-action">
+
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal14">More Info</a>
+              <div id="modal14" class="modal">
+                <div class="modal-content">
+                  <h4>Modal Header</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s4 m2">
+          <div class="card">
+            <div class="card-image">
+              <img src="Birds_of_Prey_(and_the_Fantabulous_Emancipation_of_one_Harley_Quinn).jpg" class="picBox">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+              <div class="cardTitle">Movie Title</div>
+              <div class="movieIsRated">Rated R</div>
+              <div class="movieRating">5 star</div>
+            </div>
+            <div class="card-action">
+
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal15">More Info</a>
+              <div id="modal15" class="modal">
+                <div class="modal-content">
+                  <h4>Modal Header</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s4 m2">
+          <div class="card">
+            <div class="card-image">
+              <img src="hanzelngretel.jpg" class="picBox">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+              <div class="cardTitle">Movie Title</div>
+              <div class="movieIsRated">Rated R</div>
+              <div class="movieRating">5 star</div>
+            </div>
+            <div class="card-action">
+
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal16">More Info</a>
+              <div id="modal16" class="modal">
+                <div class="modal-content">
+                  <h4>Modal Header</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s4 m2">
+          <div class="card">
+            <div class="card-image">
+              <img src="badboys4life.jpg" class="picBox">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+              <div class="cardTitle">Movie Title</div>
+              <div class="movieIsRated">Rated R</div>
+              <div class="movieRating">5 star</div>
+            </div>
+            <div class="card-action">
+
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal17">More Info</a>
+              <div id="modal17" class="modal">
+                <div class="modal-content">
+                  <h4>Modal Header</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s4 m2">
+          <div class="card">
+            <div class="card-image">
+              <img src="thecallofthewild.jpg" class="picBox">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+              <div class="cardTitle">Movie Title</div>
+              <div class="movieIsRated">Rated R</div>
+              <div class="movieRating">5 star</div>
+            </div>
+            <div class="card-action">
+
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal18">More Info</a>
+              <div id="modal18" class="modal">
+                <div class="modal-content">
+                  <h4>Modal Header</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    </div>
+  </section>
+  <hr class="solid">
+  <footer class="page-footer">
+    <div class="container-footer">
+      <div class="row">
+        <div class="col l2 s12">
+          <a href="./index.html" class="brand-logo"><img src="N2MOVIESlogo2.png" alt="N2MOVIESlogo" width="150px"
+              height="150px"></i></a>
+        </div>
+        <div class="col l4 s12">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Trending</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">New Releases</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">About Us</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="./index.js"></script>
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="./index.js"></script>
+
 </body>
+
 
 
 </html>
