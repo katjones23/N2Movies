@@ -142,4 +142,11 @@ h2{
   color: orange;
 }
 
+.card-action{
+  height: 15%;
+}
+.card-content{
+  height: 35%;
+}
+
 
