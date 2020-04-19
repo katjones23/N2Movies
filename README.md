@@ -6,9 +6,9 @@ A web application that populates movie recommendations based off of a movie name
 
 ## Credits
 
-[Steven Langlois](https://github.com/GrahamGolf)
-[Isaiah Kelly](https://github.com/Isaiahpkelly)
-[Timothy Anderson](https://github.com/tmanderson001)
+* [Steven Langlois](https://github.com/GrahamGolf), Collaborator
+* [Isaiah Kelly](https://github.com/Isaiahpkelly), Collaborator
+* [Timothy Anderson](https://github.com/tmanderson001), Collaborator
 
-[Does the Dog Die API](https://www.doesthedogdie.com/api)
-[The Movie Database API](https://developers.themoviedb.org/3/getting-started/introduction)
+* [Does the Dog Die API](https://www.doesthedogdie.com/api)
+* [The Movie Database API](https://developers.themoviedb.org/3/getting-started/introduction)
