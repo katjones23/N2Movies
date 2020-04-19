@@ -5,40 +5,35 @@
   box-sizing: border-box;
 }
 
-.nav-wrapper{
-  
+.nav-wrapper {
   position: relative;
-  padding: 10px;
-  
-  
-  
+  padding: 10px; 
 }
-.nav-bar{
+
+.nav-bar {
   height: 100%;
   position: relative;
   padding-bottom: 20px;
 }
 
 body {
-  background-image: url('./backgroundopacity2.png') ;
-  
+  background-image: url('./backgroundopacity2.png');
   background-repeat: no-repeat center;
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
   height: 100vh;
- 
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-
-
-
-.switch-mode{
+.switch-mode {
   margin-top: 50px;
   margin-left: 25px;
 }
 
-.switch-text{
+.switch-text {
   color: black;
   font-size: 150%;
   text-shadow: 1px 1px gray;
@@ -50,7 +45,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(90, 82, 82, 0.562);
-  
   width: 50%;
   padding: 15px;
   border-radius: 5px;
@@ -59,7 +53,7 @@ body {
   
 }
 
-.wrapper .z-input{
+.wrapper .z-input {
   width: 85%;
   padding: 15px 20px;
   border-bottom: none;
@@ -68,7 +62,7 @@ body {
   color: white;
 }
 
-.searchBtn{
+.searchBtn {
   background: #9b9a93e5;
   font-size: 150%;
   width: 15%;
@@ -77,63 +71,49 @@ body {
   cursor: pointer;
 }
 
-.searchBtn .fas{
+.searchBtn .fas {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.trending-section, .popular-section, .topRated-section, .recommended-section, .similar-section, .searchResults{
+.trending-section, .popular-section, .topRated-section, .recommended-section, .similar-section, .searchResults {
   text-align: center;
   align-content: center;
 }
 
-h1{
+h1 {
   font-size: 500%;
   text-shadow: 3px 3px black;
 }
 
-.trending-header{
+.trending-header, .topRated-header, .searchResults-header, .popular-header {
   color: whitesmoke;
 }
 
-.card{
+.card {
   height: 480px;
   margin-bottom: 100px;
 }
 
-.picBox{
+.picBox {
   height: 300px;
 }
 
-.page-footer{
+.page-footer {
   background-color: rgba(128, 128, 128, 0.342);  
-}
-
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
 }
 
 main {
   flex: 1 0 auto;
 }
 
-h2{
+h2 {
   color: red;
 }
 
-.popular-header{
-  color: whitesmoke;
-}
-
-.topRated-header, .searchResults-header{
-  color: whitesmoke;
-}
-
-.recommended-header, .similar-header{
+.recommended-header, .similar-header {
   color: whitesmoke;
   display: none;
 }
@@ -142,10 +122,11 @@ h2{
   color: orange;
 }
 
-.card-action{
+.card-action {
   height: 15%;
 }
-.card-content{
+
+.card-content {
   height: 35%;
 }
 
