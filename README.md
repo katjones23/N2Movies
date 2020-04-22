@@ -2,6 +2,8 @@
 
 ## Description 
 
+[Deployed Link](https://katjones23.github.io/N2Movies/)
+
 A web application that populates movie recommendations based off of a movie name.  
 
 ## Credits
